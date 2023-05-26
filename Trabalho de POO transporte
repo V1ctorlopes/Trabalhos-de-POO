@@ -1,0 +1,41 @@
+public class Bovino 
+{
+    private int     Id;
+    private float   Peso;
+    
+    public Bovino(int id, float peso) 
+    {
+        if(peso <= 0.0f || id <= 0)
+        {
+            System.out.println("Valor não pode ser negativo ou zero");
+            System.exit(0);
+        } else 
+        {
+            Id = id;
+            Peso = peso;
+        }
+    }
+
+    public int getId() 
+    {
+        return Id;
+    }
+
+    public float getPeso() 
+    {
+        return Peso;
+    }
+    public void setPeso(float peso) 
+    {
+        if(peso <= 0.0f)
+        {
+            System.out.println("Peso "+ peso + " é inválido");
+        } else 
+        {
+            Peso = peso;
+        } 
+    }
+
+    
+
+}
